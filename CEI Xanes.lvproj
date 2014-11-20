@@ -25,7 +25,6 @@ XANES Software Version 0.1</Property>
 		<Item Name="Configuration.vi" Type="VI" URL="../Configuration.vi"/>
 		<Item Name="CreateReport.vi" Type="VI" URL="../CEIXanes.llb/CreateReport.vi"/>
 		<Item Name="CreateRS485String.vi" Type="VI" URL="../CEIXanes.llb/CreateRS485String.vi"/>
-		<Item Name="cullme2.vi" Type="VI" URL="../cullme2.vi"/>
 		<Item Name="D2ThetaFromDetector.vi" Type="VI" URL="../CEIXanes.llb/D2ThetaFromDetector.vi"/>
 		<Item Name="DeselectThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/DeselectThetaMotor.vi"/>
 		<Item Name="DetectorMotor.vi" Type="VI" URL="../CEIXanes.llb/DetectorMotor.vi"/>
@@ -46,6 +45,12 @@ XANES Software Version 0.1</Property>
 		<Item Name="ReportGenerator.vi" Type="VI" URL="../CEIUtilities.llb/ReportGenerator.vi"/>
 		<Item Name="RhoMotor.vi" Type="VI" URL="../CEIXanes.llb/RhoMotor.vi"/>
 		<Item Name="RotateTurret.vi" Type="VI" URL="../CEIXanes.llb/RotateTurret.vi"/>
+		<Item Name="RS485MotorInit.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorInit.vi"/>
+		<Item Name="RS485MotorMove.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorMove.vi"/>
+		<Item Name="RS485MotorPos.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPos.vi"/>
+		<Item Name="RS485MotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerDown.vi"/>
+		<Item Name="RS485MotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerUp.vi"/>
+		<Item Name="RS485MotorStopped.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorStopped.vi"/>
 		<Item Name="ScanCompleteAlert.vi" Type="VI" URL="../CEIXanes.llb/ScanCompleteAlert.vi"/>
 		<Item Name="ScanMoveMotors.vi" Type="VI" URL="../CEIXanes.llb/ScanMoveMotors.vi"/>
 		<Item Name="SelectThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/SelectThetaMotor.vi"/>
@@ -59,8 +64,15 @@ XANES Software Version 0.1</Property>
 		<Item Name="TestMotor.vi" Type="VI" URL="../CEIUtilities.llb/TestMotor.vi"/>
 		<Item Name="TestNotification.vi" Type="VI" URL="../TestNotification.vi"/>
 		<Item Name="TestZeroAnalyzerStage.vi" Type="VI" URL="../CEIUtilities.llb/TestZeroAnalyzerStage.vi"/>
+		<Item Name="ThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/ThetaMotor.vi"/>
 		<Item Name="TurretController.vi" Type="VI" URL="../CEIXanes.llb/TurretController.vi"/>
 		<Item Name="TurretMotor.vi" Type="VI" URL="../CEIXanes.llb/TurretMotor.vi"/>
+		<Item Name="USBMotorInit.vi" Type="VI" URL="../CEIXanes.llb/USBMotorInit.vi"/>
+		<Item Name="USBMotorMove.vi" Type="VI" URL="../CEIXanes.llb/USBMotorMove.vi"/>
+		<Item Name="USBMotorPos.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPos.vi"/>
+		<Item Name="USBMotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerDown.vi"/>
+		<Item Name="USBMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerUp.vi"/>
+		<Item Name="USBMotorStopped.vi" Type="VI" URL="../CEIXanes.llb/USBMotorStopped.vi"/>
 		<Item Name="ZeroAllAnalyzerStages.vi" Type="VI" URL="../CEIXanes.llb/ZeroAllAnalyzerStages.vi"/>
 		<Item Name="ZeroOneAnalyzer.vi" Type="VI" URL="../CEIXanes.llb/ZeroOneAnalyzer.vi"/>
 		<Item Name="ZeroProcess.vi" Type="VI" URL="../CEIXanes.llb/ZeroProcess.vi"/>
