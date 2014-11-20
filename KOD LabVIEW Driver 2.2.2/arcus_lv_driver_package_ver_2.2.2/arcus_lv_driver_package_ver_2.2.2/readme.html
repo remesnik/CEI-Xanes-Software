@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Arcus USB Communications LabVIEW Driver</title>
+</head>
+<style type="text/css">
+table,td,tr,body,input,textarea,p{
+	margin:0px;
+	padding:0px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	color:#333;
+	padding-left:5px;
+	padding-top:5px;
+}
+
+#install-dir{
+	font-style:italic;
+    padding-left: 40px;
+}
+
+p.topic-header{
+	color:#600;
+	padding-top:10px;
+	text-decoration:underline;
+	padding-bottom:8px;
+}
+
+p.images{
+	padding-top: 15px;
+}
+
+#main{
+	background-image:url(resources/help_files/images/main_menu.jpg);
+	background-repeat:no-repeat;
+	height:253px;
+}
+
+#examples-sub{
+	background-image:url(resources/help_files/images/examples_main_menu.jpg);
+	background-repeat:no-repeat;
+	height:197px;
+}
+
+#examples-setters-sub{
+	background-image:url(resources/help_files/images/example_setters.jpg);
+	background-repeat:no-repeat;
+	height:143px;
+}
+
+#examples-getters-sub{
+	background-image:url(resources/help_files/images/example_getters.jpg);
+	background-repeat:no-repeat;
+	height:143px;
+}
+
+#setters-sub{
+	background-image:url(resources/help_files/images/util_setters.jpg);
+	background-repeat:no-repeat;
+	height:143px;
+}
+
+#getters-sub{
+	background-image:url(resources/help_files/images/util_getters.jpg);
+	background-repeat:no-repeat;
+	height:197px;
+}
+
+#functions-sub{
+	background-image:url(resources/help_files/images/main_functions.jpg);
+	background-repeat:no-repeat;
+	height:197px;
+}
+
+#utility-panel-sub{
+	background-image:url(resources/help_files/images/utility_panel.jpg);
+	background-repeat:no-repeat;
+	height:581px;
+}
+
+#console-panel-sub{
+	background-image:url(resources/help_files/images/console_panel.jpg);
+	background-repeat:no-repeat;
+	height:151px;
+}
+
+
+</style>
+
+<body>
+<h2>Arcus Technology USB Communications LabVIEW&reg Driver - version 2.2.2</h2>
+<h3>Installation Instructions</h3>
+
+<p>This package allows the targeted developer(s) to access the driver-set in two ways: (1) directly via the LabVIEW project seen here or (2) from a series of custom palette VI's (palette structure defined below) by invoking a pre-built installer that accompanies this package.  The following instructions focus on the installer (recommended for novice developers).</p>
+
+<p class="topic-header">(1) Invoke the Installer</p>
+<p>Contained within the downloaded package is a 'setup.exe' installer located in the following directory:</p>
+<p>\\built\installers\arcus-usb-comm-installer\Volume\</p>
+<p> Simply invoke this installer and the latest version of the Arcus driver toolset will be installed in LabVIEW's inst.lib directory.</p>
+<p class="topic-header">(2) Launch LabVIEW</p>
+<p>If LabVIEW was open when step number (1) above was completed, restart the environment.</p>
+<p>the newly installed Driver set will appear in the "Instrument I\O" >>> "Instrument Drivers" palette titled "Arcus Technology"</p>
+
+<h3>Arcus Technology Instrument Driver - Palettes Overview</h3>
+<p>The following is a brief overview of the miscellaneous palettes as they appear in the "Instrument Drivers" >>> "Arcus Technology" palette.</p>
+<p>NOTE: All VI's are documented. Refer to each VI's "Documentation" field or launch the Context Help window by clicking "Help" >>> "Show Context Help" then hover the cursor over each VI to see its description</p>
+<p class="topic-header">Main Palette (top level)</p>
+<div id="main"></div>
+<p>This is the top level, main palette for the driver set.  The top row consists of (from right to left) a Create Connection vi, an Examples sub-palette and a Close Connection VI.  The second row consists of sub-palette titled Utility Setters, a VI instrumental for sending ASCII commands and another sub palette consisting of Utility Getters (discussed later).  Lasty, the third row consists of a sub-palette for VI's wrapping all major USB API functions, a Device Selection utility and a native "Select a VI..." link</p>
+
+<p class="topic-header">Examples Sub-Palette</p>
+<div id="examples-sub"></div>
+<p>From left to right, top row, this palette consists of a sub-palette of example VI's demonstrating simple motor commands/setters.  Next is a VI titled "Utility Panel".  This VI is actually a fully functional application that implements all of the driver's functionality.  Use this VI to uncover ideas that aren't covered in the examples section.  Next to that is a much simpler version of the Utility Panel named "Console Panel".  This is a simple demonstration of a console-only utility designed for writing ASCII commands to the connected device (and monitoring its response).  Next, similar to the first sub palette of commands/setters, this is an sub-palette containing query/getter-based examples.  Lastly (bottom row) is an example VI demonstrating how ASCII commands are sent (and their responses received) followed by a pair of Master - Slave VI's that demonstrate the ability to dynamically control a VI that is responsible for actual motor control while the controlling Master knows no specifics about the hardware it is indirectly controlling.</p>
+
+<p class="topic-header">Examples: Commands/Setters Sub-Palette</p>
+<div id="examples-setters-sub"></div>
+<p>From left to right, this sub-palette contains examples for Setting Digital Outputs, Setting Polarity Values, Jogging to Target (with status output) and Jogging to Target (no status output)</p>
+
+<p class="topic-header">Examples: Commands/Setters Sub-Palette</p>
+<div id="examples-getters-sub"></div>
+<p>From left to right, this sub-palette contains examples for Retrieving Device Info, Retrieving Digital Input Values, Retrieving Digital Output Values, Retrieving Polarity Settings and Retrieving Current Status</p>
+
+<p class="topic-header">Utilities/Wrappers: Setters Sub-Palette</p>
+<div id="setters-sub"></div>
+<p>This sub-palette consists of a series higher level helper VI's (focussed on setting data to the attached device) that facilitate the writing of commands requiring additional logic to translate info that's meaningful to a LabVEIW developer to something that the device can interpret.  From left to right there are VI's that Set (assign) a Digital Output, Set Polarity Value(s) and Enable/Disable the Device</p>
+
+<p class="topic-header">Utilities/Wrappers: Getters Sub-Palette</p>
+<div id="getters-sub"></div>
+<p>Similar to the previous sub-palette, sub-palette consists of a series higher level helper VI's (focussed on getting data to the attached device) that facilitate the writing of commands (and subsquent response interpretations) requiring additional logic to translate device responses to something that's meaningful to a LabVEIW developer.  From left to right, starting in the top row there are VI's that Retrieve the Current Motor Position, Retrieve Current Digital Input Channel State(s), Retrieve Current Digital Output State(s), Retrieve Motor Status and Retrieve Current Polarity Values</p>
+
+<p class="topic-header">Main Functions Sub-Palette</p>
+<div id="functions-sub"></div>
+<p>This sub-palette consists of a series of VI's that specifically wrap all the main functions exposed via the USB communications API.  Some of these (the more commonly used ones) are referenced in the top-level palette.  From left to right, starting with the top row there are VI's that Create a Connection to the attached device, Close the Connection with an Attached Device, Issue a Command and Receive a Response, Retrieve Total Number of Attached Devices, Set Read/Write Timeouts, Flush the Communications Buffer and Get Device Information</p>
+
+<p class="topic-header">Utility Interfaces (Utility Panel)</p>
+<div id="utility-panel-sub"></div>
+<p>As briefly discussed above, the Examples Sub-Pallette contains a "Utility Panel" that implements tha majority fo what the device API has to offer.  This is an image of this interface.  By clicking on the yellow "<?>? button in the launched interface, a dialog appears providing details on each indicator and control on this interface.  Simply hover the mouse over each to read its contents. </p>
+
+<p class="topic-header">Utility Interfaces (Utility Console)</p>
+<div id="console-panel-sub"></div>
+<p>As briefly discussed above, the Examples Sub-Pallette contains a "Console Panel" that implements only the ASCII level communication protocol with the attached device.  By clicking on the yellow "<?>? button in the launched interface, a dialog appears providing details on each indicator and control on this interface.  Simply hover the mouse over each to read its contents. </p>
+
+</body>
+</html>
