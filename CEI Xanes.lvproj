@@ -38,7 +38,11 @@ XANES Software Version 0.1</Property>
 		<Item Name="MotionTest.vi" Type="VI" URL="../MotionTest.vi"/>
 		<Item Name="MotorTemplate.vi" Type="VI" URL="../CEIXanes.llb/MotorTemplate.vi"/>
 		<Item Name="NewAnalyzerTuneUp.vi" Type="VI" URL="../CEIXanes.llb/NewAnalyzerTuneUp.vi"/>
-		<Item Name="NewportMotor.vi" Type="VI" URL="../CEIXanes.llb/NewportMotor.vi"/>
+		<Item Name="NewportMotorPos.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPos.vi"/>
+		<Item Name="NewportMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPowerUp.vi"/>
+		<Item Name="NewportMotorStopped.vi" Type="VI" URL="../NewportMotorStopped.vi"/>
+		<Item Name="NewportMotorZero.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorZero.vi"/>
+		<Item Name="NewportMove.vi" Type="VI" URL="../CEIXanes.llb/NewportMove.vi"/>
 		<Item Name="NewportTest.vi" Type="VI" URL="../CEIUtilities.llb/NewportTest.vi"/>
 		<Item Name="newporttesting.vi" Type="VI" URL="../newporttesting.vi"/>
 		<Item Name="ReadWrite_485.vi" Type="VI" URL="../CEIXanes.llb/ReadWrite_485.vi"/>
@@ -73,6 +77,7 @@ XANES Software Version 0.1</Property>
 		<Item Name="USBMotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerDown.vi"/>
 		<Item Name="USBMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerUp.vi"/>
 		<Item Name="USBMotorStopped.vi" Type="VI" URL="../CEIXanes.llb/USBMotorStopped.vi"/>
+		<Item Name="XiMotor.vi" Type="VI" URL="../CEIXanes.llb/XiMotor.vi"/>
 		<Item Name="ZeroAllAnalyzerStages.vi" Type="VI" URL="../CEIXanes.llb/ZeroAllAnalyzerStages.vi"/>
 		<Item Name="ZeroOneAnalyzer.vi" Type="VI" URL="../CEIXanes.llb/ZeroOneAnalyzer.vi"/>
 		<Item Name="ZeroProcess.vi" Type="VI" URL="../CEIXanes.llb/ZeroProcess.vi"/>
@@ -91,6 +96,7 @@ XANES Software Version 0.1</Property>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Motion Done?.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Motion Done?.vi"/>
 				<Item Name="Motion, Absolute.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Motion, Absolute.vi"/>
+				<Item Name="Motion, Home Search.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Motion, Home Search.vi"/>
 				<Item Name="Motor OFF.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Motor OFF.vi"/>
 				<Item Name="Motor ON.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Motor ON.vi"/>
 				<Item Name="Read Controller Status.vi" Type="VI" URL="/&lt;userlib&gt;/NewStep200/NSC200.llb/Read Controller Status.vi"/>
