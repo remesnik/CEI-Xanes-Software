@@ -14,6 +14,31 @@ XANES Software Version 0.1</Property>
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="NewportMotor" Type="Folder">
+			<Item Name="NewportMotorPos.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPos.vi"/>
+			<Item Name="NewportMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPowerUp.vi"/>
+			<Item Name="NewportMotorStopped.vi" Type="VI" URL="../NewportMotorStopped.vi"/>
+			<Item Name="NewportMotorZero.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorZero.vi"/>
+			<Item Name="NewportMove.vi" Type="VI" URL="../CEIXanes.llb/NewportMove.vi"/>
+			<Item Name="NewportTest.vi" Type="VI" URL="../CEIUtilities.llb/NewportTest.vi"/>
+			<Item Name="newporttesting.vi" Type="VI" URL="../newporttesting.vi"/>
+		</Item>
+		<Item Name="RS485Motor" Type="Folder">
+			<Item Name="RS485MotorInit.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorInit.vi"/>
+			<Item Name="RS485MotorMove.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorMove.vi"/>
+			<Item Name="RS485MotorPos.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPos.vi"/>
+			<Item Name="RS485MotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerDown.vi"/>
+			<Item Name="RS485MotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerUp.vi"/>
+			<Item Name="RS485MotorStopped.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorStopped.vi"/>
+		</Item>
+		<Item Name="USBMotor" Type="Folder">
+			<Item Name="USBMotorInit.vi" Type="VI" URL="../CEIXanes.llb/USBMotorInit.vi"/>
+			<Item Name="USBMotorMove.vi" Type="VI" URL="../CEIXanes.llb/USBMotorMove.vi"/>
+			<Item Name="USBMotorPos.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPos.vi"/>
+			<Item Name="USBMotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerDown.vi"/>
+			<Item Name="USBMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerUp.vi"/>
+			<Item Name="USBMotorStopped.vi" Type="VI" URL="../CEIXanes.llb/USBMotorStopped.vi"/>
+		</Item>
 		<Item Name="2ThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/2ThetaMotor.vi"/>
 		<Item Name="AnalyzerMoveFacingAngle.vi" Type="VI" URL="../CEIXanes.llb/AnalyzerMoveFacingAngle.vi"/>
 		<Item Name="arcus main.vi" Type="VI" URL="../CEIXanes.llb/arcus main.vi"/>
@@ -29,6 +54,7 @@ XANES Software Version 0.1</Property>
 		<Item Name="DeselectThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/DeselectThetaMotor.vi"/>
 		<Item Name="DetectorMotor.vi" Type="VI" URL="../CEIXanes.llb/DetectorMotor.vi"/>
 		<Item Name="DummyXrays.vi" Type="VI" URL="../CEIXanes.llb/DummyXrays.vi"/>
+		<Item Name="IniFileRead.vi" Type="VI" URL="../CEIUtilities.llb/IniFileRead.vi"/>
 		<Item Name="Initialization.vi" Type="VI" URL="../CEIXanes.llb/Initialization.vi"/>
 		<Item Name="LoadEnergyFromIni.vi" Type="VI" URL="../CEIXanes.llb/LoadEnergyFromIni.vi"/>
 		<Item Name="Logger.vi" Type="VI" URL="../Logger.vi"/>
@@ -38,23 +64,10 @@ XANES Software Version 0.1</Property>
 		<Item Name="MotionTest.vi" Type="VI" URL="../MotionTest.vi"/>
 		<Item Name="MotorTemplate.vi" Type="VI" URL="../CEIXanes.llb/MotorTemplate.vi"/>
 		<Item Name="NewAnalyzerTuneUp.vi" Type="VI" URL="../CEIXanes.llb/NewAnalyzerTuneUp.vi"/>
-		<Item Name="NewportMotorPos.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPos.vi"/>
-		<Item Name="NewportMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorPowerUp.vi"/>
-		<Item Name="NewportMotorStopped.vi" Type="VI" URL="../NewportMotorStopped.vi"/>
-		<Item Name="NewportMotorZero.vi" Type="VI" URL="../CEIXanes.llb/NewportMotorZero.vi"/>
-		<Item Name="NewportMove.vi" Type="VI" URL="../CEIXanes.llb/NewportMove.vi"/>
-		<Item Name="NewportTest.vi" Type="VI" URL="../CEIUtilities.llb/NewportTest.vi"/>
-		<Item Name="newporttesting.vi" Type="VI" URL="../newporttesting.vi"/>
 		<Item Name="ReadWrite_485.vi" Type="VI" URL="../CEIXanes.llb/ReadWrite_485.vi"/>
 		<Item Name="ReportGenerator.vi" Type="VI" URL="../CEIUtilities.llb/ReportGenerator.vi"/>
 		<Item Name="RhoMotor.vi" Type="VI" URL="../CEIXanes.llb/RhoMotor.vi"/>
 		<Item Name="RotateTurret.vi" Type="VI" URL="../CEIXanes.llb/RotateTurret.vi"/>
-		<Item Name="RS485MotorInit.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorInit.vi"/>
-		<Item Name="RS485MotorMove.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorMove.vi"/>
-		<Item Name="RS485MotorPos.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPos.vi"/>
-		<Item Name="RS485MotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerDown.vi"/>
-		<Item Name="RS485MotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorPowerUp.vi"/>
-		<Item Name="RS485MotorStopped.vi" Type="VI" URL="../CEIXanes.llb/RS485MotorStopped.vi"/>
 		<Item Name="ScanCompleteAlert.vi" Type="VI" URL="../CEIXanes.llb/ScanCompleteAlert.vi"/>
 		<Item Name="ScanMoveMotors.vi" Type="VI" URL="../CEIXanes.llb/ScanMoveMotors.vi"/>
 		<Item Name="SelectThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/SelectThetaMotor.vi"/>
@@ -71,12 +84,6 @@ XANES Software Version 0.1</Property>
 		<Item Name="ThetaMotor.vi" Type="VI" URL="../CEIXanes.llb/ThetaMotor.vi"/>
 		<Item Name="TurretController.vi" Type="VI" URL="../CEIXanes.llb/TurretController.vi"/>
 		<Item Name="TurretMotor.vi" Type="VI" URL="../CEIXanes.llb/TurretMotor.vi"/>
-		<Item Name="USBMotorInit.vi" Type="VI" URL="../CEIXanes.llb/USBMotorInit.vi"/>
-		<Item Name="USBMotorMove.vi" Type="VI" URL="../CEIXanes.llb/USBMotorMove.vi"/>
-		<Item Name="USBMotorPos.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPos.vi"/>
-		<Item Name="USBMotorPowerDown.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerDown.vi"/>
-		<Item Name="USBMotorPowerUp.vi" Type="VI" URL="../CEIXanes.llb/USBMotorPowerUp.vi"/>
-		<Item Name="USBMotorStopped.vi" Type="VI" URL="../CEIXanes.llb/USBMotorStopped.vi"/>
 		<Item Name="XiMotor.vi" Type="VI" URL="../CEIXanes.llb/XiMotor.vi"/>
 		<Item Name="ZeroAllAnalyzerStages.vi" Type="VI" URL="../CEIXanes.llb/ZeroAllAnalyzerStages.vi"/>
 		<Item Name="ZeroOneAnalyzer.vi" Type="VI" URL="../CEIXanes.llb/ZeroOneAnalyzer.vi"/>
@@ -160,6 +167,7 @@ XANES Software Version 0.1</Property>
 				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
 				<Item Name="NI_Standard Report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Standard Report/NI_Standard Report.lvclass"/>
+				<Item Name="Normalize End Of Line.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Normalize End Of Line.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/OccFireType.ctl"/>
 				<Item Name="Open Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Open Registry Key.vi"/>
